@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/ToDoList.css" type="text/css">
+    <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/ToDoList.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Get Shit Done</h1>
+            <div>
+
+            <input type="text" class="AddToList" onkeypress="myFunction(event)" id="AddToList" placeholder="Enter To Do Item">
+            </div>
+            <br>
+            <ul id="myList">
+            </ul>
+            <br>
+            <input type="submit" value="Remove completed items" onclick="clearDoneItems()" class="clear">
+            <input type="submit" value="Clear all" onclick="clearAll()" class="clear">
+        </div>
+    </div>
+    <div class="items">
+        <div id="items"><i class="fa fa-wrench" aria-hidden="true" style="font-size: 30px !important; color: #e6e6e6; margin-top: 15px; margin-left: 15px;"></i> <span>To Do Items: </span></div>
+    </div>
+
+</body>
+</html>
+
